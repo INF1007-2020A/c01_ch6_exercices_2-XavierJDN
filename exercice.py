@@ -7,37 +7,49 @@ from matplotlib.colors import cnames
 
 def list_to_dict(some_list: list) -> dict:
     # TODO: Transformer la liste en dictionnaire, les éléments de la liste deviennent les clés et leur index deviennent les valeurs
-    return {}
+    some_dict = {}
+    for index, element in enumerate(some_list):
+        some_dict[element] = index
+
+    return some_dict
 
 
 def color_name_to_hex(colors: list) -> list:
+    return [(color, cnames[color]) for color in colors]
     # TODO: Trouver la valeur hex de chaque couleur dans la liste et créer une liste de tupple où le premier élément est le nom de la couleur et le deuxième est la valeur hex
-    return []
 
 
 def odd_integer_for_loop(end: int) -> list:
-
-    return []
+    list_odd = []
+    for number in range(0, end):
+        if number % 2 != 0:
+            list_odd.append(number)
+    return list_odd
 
 
 def odd_integer_list_comprehension(end: int) -> list:
-    return []
+    return [number for number in range(0, end) if number % 2 != 0]
 
 
 def loop_traversal(integers: list) -> None:
-    pass
+    for index, element in enumerate(integers):
+        print(index, element)
 
 
 def word_dict_for_loop(words: list) -> dict:
-    return {}
+    words_dict = {}
+    for word in words:
+        words_dict[word[:3].upper()] = word
+    return words_dict
 
 
 def word_dict_comprehension(words: list) -> dict:
-    return {}
+    return {word[:3].upper(): word for word in words}
 
 
 def dictionary_traversal(words: dict) -> None:
-    pass
+    for k, v in words.items():
+        print(k, v)
 
 
 def main() -> None:

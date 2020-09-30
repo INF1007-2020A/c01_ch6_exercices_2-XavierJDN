@@ -13,7 +13,7 @@ Compléter les quelques exercices suivants en modifiant le code de [exercice.py]
 3. a) Avec une boucle for, écrire un programme qui crée une liste des entiers impairs de 1 à un nombre donné.
    b) Même chose que a), mais avec une list comprehension.
    c) Parcourir la liste obtenue en a) ou en b) et afficher les éléments ainsi que leur index, sans déclarer de variable à l'extérieur de la boucle.
-4. a) Avec une boucle for, écrire un programme qui crée un dictionnaire dont les valeurs sont des mots donnés et  dont les clefs sont les premières lettre mises en majuscules de ces mots.
+    4. a) Avec une boucle for, écrire un programme qui crée un dictionnaire dont les valeurs sont des mots donnés et  dont les clefs sont les premières lettre mises en majuscules de ces mots.
    b) Même chose que a), mais avec un dictionary comprehension.
    c) Parcourir le dictionnaire obtenu en a) ou en b) et afficher les éléments ainsi que leur index en ordre alphabétique, sans déclarer de variable à l'extérieur de la boucle.
 
