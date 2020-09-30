@@ -1,0 +1,85 @@
+test_color_name_to_hex (__main__.TestExercice) ... ok
+test_list_to_dict (__main__.TestExercice) ... ok
+test_odd_integer_for_loop (__main__.TestExercice) ... ok
+test_odd_integer_list_comprehension (__main__.TestExercice) ... ok
+test_word_dict_comprehension (__main__.TestExercice) ... FAIL
+test_word_dict_for_loop (__main__.TestExercice) ... FAIL
+
+======================================================================
+FAIL: test_word_dict_comprehension (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 83, in test_word_dict_comprehension
+    'Mauvaise reponse'
+AssertionError: {'GIV': 'Given', 'A': 'a', 'TWO': 'two', 'LI[66 chars]ate'} != {'G': 'Given', 'A': 'a', 'T': 'two', 'L': 'l[53 chars]ate'}
+  {'A': 'a',
+-  'CRE': 'create',
+?    --
+
++  'C': 'create',
+-  'EQU': 'equal',
+?    --
+
++  'E': 'equal',
+-  'GIV': 'Given',
+?    --
+
++  'G': 'Given',
+-  'LIS': 'list',
+?    --
+
++  'L': 'list',
+-  'OF': 'of',
+?    -
+
++  'O': 'of',
+-  'SIZ': 'size',
+?    --
+
++  'S': 'size',
+-  'TWO': 'two'}
+?    --
+
++  'T': 'two'} : Mauvaise reponse
+
+======================================================================
+FAIL: test_word_dict_for_loop (__main__.TestExercice)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "test_exercice.py", line 72, in test_word_dict_for_loop
+    'Mauvaise reponse'
+AssertionError: {'GIV': 'Given', 'A': 'a', 'TWO': 'two', 'LI[66 chars]ate'} != {'G': 'Given', 'A': 'a', 'T': 'two', 'L': 'l[53 chars]ate'}
+  {'A': 'a',
+-  'CRE': 'create',
+?    --
+
++  'C': 'create',
+-  'EQU': 'equal',
+?    --
+
++  'E': 'equal',
+-  'GIV': 'Given',
+?    --
+
++  'G': 'Given',
+-  'LIS': 'list',
+?    --
+
++  'L': 'list',
+-  'OF': 'of',
+?    -
+
++  'O': 'of',
+-  'SIZ': 'size',
+?    --
+
++  'S': 'size',
+-  'TWO': 'two'}
+?    --
+
++  'T': 'two'} : Mauvaise reponse
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.003s
+
+FAILED (failures=2)
